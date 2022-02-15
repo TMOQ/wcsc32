@@ -198,7 +198,7 @@ class PolicyValueNetwork(nn.Module):
         # building inverted residual blocks
         block = GhostBottleneck
         #for k, exp_size, c, use_se, s in self.cfgs:
-        for rep_ in range(9):
+        for rep_ in range(10):
             output_channel = k #_make_divisible(c * width_mult, 4)
             hidden_channel = k #_make_divisible(exp_size * width_mult, 4)
             #layers.append(block(input_channel, hidden_channel, output_channel, k, s, use_se))
