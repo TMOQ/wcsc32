@@ -22,6 +22,8 @@ def policy_value_network(network, add_sigmoid=False):
         from dlshogi.network.policy_value_network_ghostnet05_swish import PolicyValueNetwork
     elif network == 'ghostnet10s':
         from dlshogi.network.policy_value_network_ghostnet10_swish import PolicyValueNetwork
+    elif network == 'ghostnet15s':
+        from dlshogi.network.policy_value_network_ghostnet15_swish import PolicyValueNetwork
     elif network == 'effnet_s':
         from dlshogi.network.policy_value_network_effnet_s import PolicyValueNetwork
     elif network == 'mobilenet':
