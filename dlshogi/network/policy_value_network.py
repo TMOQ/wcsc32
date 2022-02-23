@@ -18,6 +18,8 @@ def policy_value_network(network, add_sigmoid=False):
         from dlshogi.network.policy_value_network_ghostnet10 import PolicyValueNetwork
     elif network == 'ghostnet15':
         from dlshogi.network.policy_value_network_ghostnet15 import PolicyValueNetwork
+    elif network == 'ghostnet20':
+        from dlshogi.network.policy_value_network_ghostnet20 import PolicyValueNetwork
     elif network == 'ghostnet05s':
         from dlshogi.network.policy_value_network_ghostnet05_swish import PolicyValueNetwork
     elif network == 'ghostnet10s':
