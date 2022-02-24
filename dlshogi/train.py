@@ -27,7 +27,7 @@ def main(*argv):
     parser.add_argument('--testbatchsize', type=int, default=1024, help='Number of positions in each test mini-batch')
     parser.add_argument('--epoch', '-e', type=int, default=1, help='Number of epoch times')
     #parser.add_argument('--network', default='resnet10_swish', help='network type')
-    parser.add_argument('--network', default='ghostnet20', help='network type')
+    parser.add_argument('--network', default='ghostnet15', help='network type')
     parser.add_argument('--checkpoint', default='checkpoint-{epoch:03}.pth', help='checkpoint file name')
     parser.add_argument('--resume', '-r', default='', help='Resume from snapshot')
     parser.add_argument('--reset_optimizer', action='store_true')
