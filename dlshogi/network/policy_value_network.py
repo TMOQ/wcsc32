@@ -8,6 +8,8 @@ def policy_value_network(network, add_sigmoid=False):
         from dlshogi.network.policy_value_network_wideresnet10 import PolicyValueNetwork
     elif network == 'resnet10_swish':
         from dlshogi.network.policy_value_network_resnet10_swish import PolicyValueNetwork
+    elif network == 'resnet9_swish':
+        from dlshogi.network.policy_value_network_resnet9_swish import PolicyValueNetwork
     elif network[:6] == 'resnet':
         from dlshogi.network.policy_value_network_resnet import PolicyValueNetwork
     elif network[:5] == 'senet':
