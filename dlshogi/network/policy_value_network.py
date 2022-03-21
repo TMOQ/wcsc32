@@ -62,7 +62,8 @@ def policy_value_network(network, add_sigmoid=False):
 
         # channels
         if m[3] is None:
-            channels = { 10: 192, 15: 224, 20: 256 }[blocks]
+            channels = {9: 192, 10: 192, 15: 224, 20: 256 }[blocks]
+            #channels = {10: 192, 15: 224, 20: 256 }[blocks]
         else:
             channels = int(m[3][1:])
 
